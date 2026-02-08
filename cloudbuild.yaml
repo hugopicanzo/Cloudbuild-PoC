@@ -17,5 +17,6 @@ steps:
       - |
         source venv/bin/activate # <--- ¡Activamos el entorno!
         python3 -m mkdocs build --config-file mkdocs.yml
-        
+options:
+  logging: CLOUD_LOGGING_ONLY
 timeout: '600s'
